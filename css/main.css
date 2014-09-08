@@ -11,7 +11,7 @@
 	position: absolute;
 	transition: -webkit-transform 3s;
 	-webkit-transform: rotateY(0deg) ;
-
+	-webkit-backface-visibility: hidden;
 }
 
 .portfolio-item {
@@ -22,14 +22,14 @@
 	
 }
 .portfolio-item:hover .front {
-		-webkit-transform: perspective(600px) rotateY(-180deg) ;
+		-webkit-transform: rotateY(180deg) ;
 		-webkit-transform-style: preserve-3d;
-		-webkit-backface-visibility: hidden;
+	
 		perspective: 600px;
 }
 
 .portfolio-item:hover .back {
-		-webkit-transform: perspective(600px) rotateY(0deg) ;
+		-webkit-transform:  rotateY(0deg) ;
 
 	}
 
